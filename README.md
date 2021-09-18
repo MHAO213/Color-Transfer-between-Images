@@ -4,7 +4,7 @@ Color transfer is a practical method to change the appearance of a source image 
 This program is the implementation of the paper [*Color Transfer between Images*](https://www.cs.tau.ac.il/~turkel/imagepapers/ColorTransfer.pdf) by Erik Reinhard, Michael Ashikhmin, Bruce Gooch and Peter Shirley.
 
 ## Features
-- Read BMP file (source/target image)
+- Read BMP/PNG/JPG file (source/target image)
 - Calculate the mean and STD of each channel
 - Implement the RGB color transfer algorithm
     - Convert images from RGB to ℓαβ color space
@@ -23,11 +23,11 @@ pip install pyinstaller
 ```
 
 ## Run the program
-Put 6 source picture and 6 target picture inside the `source_and_target` folder, then execute the code:
+Put source pictures and target pictures inside the `source_and_target` folder, then execute the code:
 ```bash
 python color_transfer.py
 ```
-After that, your can find 6 result picture inside `result` folder.
+After that, your can find n*m result pictures inside `result` folder.
 
 Execute following instruction to create `EXE file` of this program:
 ```bash
